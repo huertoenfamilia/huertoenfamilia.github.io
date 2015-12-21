@@ -1,3 +1,98 @@
+/*estilos puramun*/
+/*hero*/
+#hero{
+  background-color: #b2e4fc;
+}
+#hero-image{
+  background-image: url(img/00.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 250px;
+}
+#hero-text{
+  margin-left: auto;
+  margin-right: auto; 
+  max-width: 800px;
+  padding: 100px 0px 200px 0px;
+  text-align: center;
+}
+/*fin hero*/
+h1 {
+  font-family: "geomanistbold";
+  color: #1a1a1a;
+  font-size: 3em;
+  line-height: 1.1;
+}
+h2{
+  font-family: "geomanistbold";
+  color: #1a1a1a;
+  font-size: 2em;
+  line-height: 1.1;
+}
+p {
+  font-family: "geomanist_regularregular";
+  font-size: 1.2em;
+  color: #1a1a1a;
+  list-style: 1.1;
+}
+.text{
+  margin-left: auto;
+  margin-right: auto; 
+  max-width: 800px;
+  padding: 30px 20px 0px 20px;
+  text-align: center;
+}
+a,a:link,a:hover,a:active,a:visited {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+a.link{
+  font-family: "geomanistbold";
+}
+/*intro*/
+#intro{
+  background-color: #fadb78;
+}
+#flecha{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0px 30px 0px;
+  text-align: center;
+}
+/*fin intro*/
+/*paso1*/
+#paso1{
+  background-color: #b2e4fc;
+}
+#paso1-image1{
+  background-image: url(img/lapiz.png);
+  background-repeat: no-repeat;
+  background-size: 90px;
+}
+#paso1-image2{
+  background-image: url(img/cuaderno.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 170px;
+}
+#paso1-cabecera{
+  padding: 100px 20px 175px 20px;
+}
+#combinaciones{
+  background-color: white;
+  margin:  30px auto 0px auto;
+  padding: 0px 0px 40px 0px;
+  text-align: center;
+}
+/*fin paso1*/
+
+
+
+
+
+/*fin estilos puramun*/
+
+
 
 /*estilos bootstrap*/
 .row {
