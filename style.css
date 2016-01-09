@@ -1,171 +1,463 @@
 /*estilos puramun*/
-/*hero*/
-#hero{
-  background-color: #b2e4fc;
-}
-#hero-image{
-  background-image: url(img/00.png);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: 250px;
-}
-#hero-text{
-  margin-left: auto;
-  margin-right: auto; 
-  max-width: 800px;
-  padding: 100px 0px 200px 0px;
-  text-align: center;
-}
-/*fin hero*/
-h1 {
-  font-family: "geomanistbold";
-  color: #1a1a1a;
-  font-size: 3em;
-  line-height: 1.1;
-}
-h2{
-  font-family: "geomanistbold";
-  color: #1a1a1a;
-  font-size: 2em;
-  line-height: 1.1;
-}
-p {
-  font-family: "geomanist_regularregular";
-  font-size: 1.2em;
-  color: #1a1a1a;
-  list-style: 1.1;
-}
-.text{
-  margin-left: auto;
-  margin-right: auto; 
-  max-width: 800px;
-  padding: 30px 20px 0px 20px;
-  text-align: center;
-}
-a,a:link,a:hover,a:active,a:visited {
-  text-decoration: none;
-  color: #1a1a1a;
-}
-a.link{
-  font-family: "geomanistbold";
-}
-/*intro*/
-#intro{
-  background-color: #fadb78;
-}
-#flecha{
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px 0px 30px 0px;
-  text-align: center;
-}
-/*fin intro*/
-/*paso1*/
-#paso1{
-  background-color: #b2e4fc;
-}
-#paso1-image1{
-  background-image: url(img/lapiz.png);
-  background-repeat: no-repeat;
-  background-size: 90px;
-}
-#paso1-image2{
-  background-image: url(img/cuaderno.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: 170px;
-}
-#paso1-cabecera{
-  padding: 100px 20px 175px 20px;
-}
-#combinaciones{
-  background-color: white;
-  margin:  30px auto 0px auto;
-  padding: 0px 0px 40px 0px;
-  text-align: center;
-}
-/*fin paso1*/
-
-
-
-
-
-/*fin estilos puramun*/
-
-
-
-/*estilos bootstrap*/
-.row {
-  margin-bottom: 20px;
-}
-.row .row {
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-[class*="col-"] {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: white;
-  background-color: white;
-  border: 1px solid #ddd;
-  border: 1px solid rgba(86,61,124,.2);
-}
-hr {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-/*fin estilos bootstrap*/
-/*mis estilos*/
-.cabecera { 
-  background-color: #63C2FC;
-  background-image: url(img/img2.png);
-  background-size: 500px;background-image: url(img/img2.png);
-
-}
-.content {
-  margin-left: auto;
-  margin-right: auto; 
-  max-width: 800px;
-}
-#image {
-  background-image: url(img/img.png);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: 500px;
-  padding: 100px 30px 170px 30px;
-}
-@media screen and (min-width: 48em) {
-  #image {
-    background-image: url(img/img.png);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 800px;
-    padding: 90px 60px 260px 60px;
+/* estilos generales*/
+  body{
+    color: #1c1c1c;
+  }
+  h1,h2 {
+    font-family: "geomanistbold";
+    line-height: 1.1;
+    margin: 0px;
+  }
+  h1{
+    font-size: 3em;
+  }
+  h2{
+    font-size: 2em;
+  }
+  p {
+    font-family: "geomanist_regularregular";
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: 0px;
+  }
+  a,a:link,a:hover,a:active,a:visited {
+    text-decoration: none;
+    font-family: "geomanistbold";
+    color: #1c1c1c;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  #g-circulo{
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+  }
+  #g-marcos{
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+  }
+  #g-material{
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    max-width: 300px;
+    text-align: center;
+  }
+  #riego{
+    background-color: white;
+  }
+  #g-riego{
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    max-width: 100%;
+    text-align: center;
+  }
+  #g-maceta{
+    margin: auto;
+    text-align: center;
+  }
+  #g-siembra{
+    text-align: center;
+    padding: 50px 20px 10px 20px;
+    max-width: 90%;
+    margin: auto;
+  }
+  .material{
+    text-align: center;
+  }
+  .content {
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 450px;
+  }
+  .row{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+    background-color: transparent;
+  }
+  [class*="col-"] {
+    background-color: transparent; 
+    border: 0px;
+    padding: 0px;
+    text-align: left;
+  }
+  .title{
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    padding: 0px 50px 0px 50px;
+  }
+  .text{
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+  }
+  .button{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
   }
   .cabecera{
-    background-image: url(img/img2.png);
-    background-size: 800px;
+    padding: 50px 20px 20px 20px;
   }
-}
-.row{
-  margin-right: 0px;
-  margin-left: 0px;
-}
-.overlay.active {
+  .bg-img{
+    background-repeat: no-repeat;
+    background-size: 25%;
+  }
+/*fin estilos generales*/
+/*menú*/
+  #menu{
+    background-color: transparent;
+    text-align: right;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    padding: 1px 0 0 7px;
+    z-index: 1;
+  }
+  .overlay.active {
     opacity: 1;
     visibility: visible;
-    transition: opacity 1.5s;
-}
-.overlay {
-    position: fixed;
-    z-index: 20;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(53,180,51,.9);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s,visibility 0s .5s;
-}
-
+    transition: opacity 0s;
+  }
+  .overlay {
+      position: fixed;
+      z-index: 20;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #f65f4f;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .5s,visibility 0s .5s;
+  }
+  #boton-cerrar{
+    text-align: right;
+    padding: 20px 20px 0px 0px;
+  }
+  .menu-text{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.4;
+    padding: 60px 0px 0px 0px;
+  }
+/*fin menú*/
+  .contenido{
+    background-color: #eff0f4;
+    padding: 30px 0px 30px 0px;
+  }
+  .contenido-title{
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 30px 20px 10px 20px;
+    text-align: center;
+    max-width: 800px;
+  }
+  .contenido-text{
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    max-width: 800px;
+  }
+/*intro*/
+  #intro{
+    background-color: #fedfc0;
+  }
+  #intro-img1{
+    background-image: url(img/valla.png);
+    background-position: bottom center;
+    background-size: 300px;
+  }
+  #intro-content-text{
+    padding: 30px 0px 150px 0px;
+    text-align: center;
+  }
+  #intro-content-img{
+    text-align: center;
+    padding-top: 40px;
+  }
+  #intro-content-img-2{
+    background-image: url();
+    text-align: center;
+    padding-top: 80px;
+  }
+  #intro-2{
+    background-color: #f65f4f;
+  }
+/*fin intro*/
+/*paso1*/
+  #p1{
+    background-color: #DDF3F7;
+  }
+  #p1-img1{
+    background-image: url(img/cuaderno.png);
+  }
+  #p1-img2{
+    background-image: url(img/lapiz.png);
+    background-position: bottom right;
+  }
+/*fin paso1*/
+/*paso2*/
+  #p2{
+    background-color: #fedfc0;
+  }
+  #p2-img1{
+    background-image: url(img/mariquita.png);
+  }
+  #p2-img2{
+    background-image: url(img/mariquita2.png);
+    background-position: bottom right;
+  }
+/*fin paso2*/
+/*paso3*/
+  #p3{
+    background-color: #E1F6B4;
+  }
+/*fin paso3*/
+/*paso4*/
+  #p4{
+    background-color: #fff5f3;
+  }
+  #p4-img1{
+    background-image: url(img/sol.png);
+  }
+  #p4-img2{
+    background-image: url(img/nubes.png);
+    background-position: bottom right;
+  }
+  .info-numero{
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    padding: 0px 0px 5px 0px;
+  }
+  .info-text{
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    max-width: 100px;
+    padding: 5px 0px 5px 0px;
+  }
+  .info-img{
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    padding: 5px 0px 0px 0px;
+  }
+/*fin paso4*/
+/*paso5*/
+  #p5{
+    background-color: #DDF3F7;
+  }
+  #p5-img1{
+    background-image: url(img/luna.png);
+    background-position: top right;
+  }
+/*fin paso5*/
+/*paso6*/
+  #p6{
+    background-color: #f7ea9f;
+  }
+  #p6-img1{
+    background-image: url(img/cesta.png);
+    background-position: top center;
+    background-size: 50%;
+  }
+  #p6-cabecera{
+    padding: 80px 20px 20px 20px;
+  }
+/*fin paso 6*/
+  #ajo {
+    background-color: #f3fdff;
+  }
+  #albahaca {
+    background-color: #f3fdff;
+  }
+  #cebolla {
+    background-color: #f3fdff;
+  }
+  #espinaca {
+    background-color: #f3fdff;
+  }
+  #guisante {
+    background-color: #f3fdff;
+  }
+  #haba {
+    background-color: #f3fdff;
+  }
+  #lechuga {
+    background-color: #f3fdff;
+  }
+  #pepino {
+    background-color: #f3fdff;
+  }
+  #pimiento {
+    background-color: #f3fdff;
+  }
+  #rabanito {
+    background-color: #f3fdff;
+  }
+  #tomate {
+    background-color: #f3fdff;
+  }
+  #zanahoria {
+    background-color: #f3fdff;
+  }
+  .ficha-text{
+    text-align: center;
+    font-size: 1.5em;
+  }
+  #ficha{
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+    max-width: 80%;
+    text-align: center;
+  }
+  #vegetal{
+    margin: auto;
+    text-align: center;
+    margin-top:-18px;
+  }
+  .vegetal-d{
+    margin: auto;
+    text-align: center;
+    margin-top:-40px;
+    margin-right:-18px;
+  }
+/*about*/
+  #about{
+    background-color: #f65f4f;
+  }
+  #about-cabecera{
+    padding: 30px 20px 20px 20px;
+  }
+  .marco-left{
+    padding-right: 0px;
+    padding-bottom: 15px;
+  }
+  .marco-right{
+    padding-left: 0px;
+    padding-bottom: 15px;
+  }
+/*fin about*/
+/*desplegables*/  
+  #p1-contenido{
+    display: none;
+  }
+  #p2-contenido{
+    display: none;
+  }
+  #p3-contenido{
+    display: none;
+  }
+  #p4-contenido{
+    display: none;
+  }
+  #p5-contenido{
+    display: none;
+  }
+  .button-mas{
+    background-image: url(img/mas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px;
+    padding: 30px;
+    margin-top: 12px;
+  }
+  .button-menos{
+    background-image: url(img/menos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px;
+    padding: 30px;
+    margin-top: 12px;
+  }
+  #p6-contenido{
+    display: none;
+  }
+/*fin desplegables*/
+  @media screen and (min-width: 40em) {
+    #intro-content-img{
+      text-align: left;
+    }
+    #g-marcos{
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    max-width: 70%;
+    text-align: center;
+  }
+    #g-siembra{
+    text-align: center;
+    padding: 50px 20px 10px 20px;
+    max-width: 40%;
+    margin: auto;
+    }
+    #vegetal{
+    margin: auto;
+    text-align: center;
+    }
+    .vegetal-d{
+    margin: auto;
+    text-align: center;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .title{
+      text-align: left;
+      padding: 0px;
+    }
+    .text{
+      padding: 0px 0px 0px 40px;
+      text-align: left;
+    }
+    .bg-img{
+      background-repeat: no-repeat;
+      background-size: 20%;
+    }
+    #intro-content-text{
+      padding: 30px 0px 250px 0px;
+    }
+    #intro-content-img-2{
+      background-image: url(img/avispas.png) ;
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: center right;
+      text-align: right;
+      padding-top: 300px;
+    }
+    #intro-img1{
+      background-size:350px;
+    }
+    #p2-img1, #p2-img2{
+      background-size: 15%;
+    }
+    #p6-img1{
+      background-size: 40%;
+    }
+    #p6-cabecera{
+      padding: 50px 20px 20px 20px;
+    }
+    .content {
+      max-width: 800px;
+    }
+    #g-circulo{
+    padding: 20px 0px 20px 0px;
+    max-width: 50%;
+    }
+    .marco-left{
+    padding-right: 5px;
+    padding-bottom: 15px;
+    }
+    .marco-right{
+    padding-left: 5px;
+    padding-bottom: 15px;
+    }
+  }
+/*fin estilos puramun*/

@@ -25,120 +25,791 @@
 	    <link href="geomanist-bold.css" rel="stylesheet">
 	    <link href="geomanist-regular.css" rel="stylesheet">
 	    <link href="style.css" rel="stylesheet">
+	    <!-- scroll -->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
+	   	<script type="text/javascript">
+			$(document).ready(function() {
+			$("#flecha").click(function() {
+			$("html, body").animate({
+			scrollTop: $($(this).attr("href")).offset().top + "px"
+			}, {
+			duration: 1000,
+			easing: "swing"
+			});
+			return false;
+			});
+			});
+		</script>
 	    <!--Ventana modal-->
 	    <script type="text/javascript">
 			function functionOne() { 
-			document.getElementById('verde').className='overlay';
+			document.getElementById('menu-2').className='overlay';
 			}
 		</script>
 		<script type="text/javascript">
 			function functionTwo() { 
-			document.getElementById('verde').className='overlay active';
+			document.getElementById('menu-2').className='overlay active';
 			}
 		</script>
+		<script type="text/javascript">
+			function functionAjo() { 
+			document.getElementById('ajo').className='overlay';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionAjo2() { 
+			document.getElementById('ajo').className='overlay active';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionAlbahaca() { 
+			document.getElementById('albahaca').className='overlay';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionAlbahaca2() { 
+			document.getElementById('albahaca').className='overlay active';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionCebolla() { 
+			document.getElementById('cebolla').className='overlay';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionCebolla2() { 
+			document.getElementById('cebolla').className='overlay active';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionEspinaca() { 
+			document.getElementById('espinaca').className='overlay';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionEspinaca2() { 
+			document.getElementById('espinaca').className='overlay active';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionGuisante() { 
+			document.getElementById('guisante').className='overlay';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionGuisante2() { 
+			document.getElementById('guisante').className='overlay active';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionHaba() { 
+			document.getElementById('haba').className='overlay';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionHaba2() { 
+			document.getElementById('haba').className='overlay active';
+			}
+		</script>
+				<script type="text/javascript">
+			function functionLechuga() { 
+			document.getElementById('lechuga').className='overlay';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionLechuga2() { 
+			document.getElementById('lechuga').className='overlay active';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionPepino() { 
+			document.getElementById('pepino').className='overlay';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionPepino2() { 
+			document.getElementById('pepino').className='overlay active';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionPimiento() { 
+			document.getElementById('pimiento').className='overlay';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionPimiento2() { 
+			document.getElementById('pimiento').className='overlay active';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionRabanito() { 
+			document.getElementById('rabanito').className='overlay';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionRabanito2() { 
+			document.getElementById('rabanito').className='overlay active';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionTomate() { 
+			document.getElementById('tomate').className='overlay';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionTomate2() { 
+			document.getElementById('tomate').className='overlay active';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionZanahoria() { 
+			document.getElementById('zanahoria').className='overlay';
+			}
+		</script>
+		<script type="text/javascript">
+			function functionZanahoria2() { 
+			document.getElementById('zanahoria').className='overlay active';
+			}
+		</script>
+		<!-- fin modales -->
+		<!-- desplegables -->
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
     	<div id="menu">
-					<p>
-						<a href="#" onClick="functionTwo();">menú</a>
-					</p>
-				</div>
-		<div id="hero">
-			<div id="hero-image">
-				<div id="hero-text">
-					<h1 style="font-size: 4em;">Puramun</h1>
-					<p style="font-size: 2em;">Un huerto en familia</p>
-				</div>
+			<p>
+				<a href="#" onClick="functionTwo();">Menú<img src="img/menu.png" style="width:48px" onClick="functionTwo();"></a>
+			</p>
+		</div>
+		<div id="menu-2" class="overlay">
+			<div id="boton-cerrar">
+				<a href="#" onClick="functionOne();"><img src="img/cerrar.png" style="width:48px;"></a>
+			</div>
+			<div class="menu-text">
+				<h1>Menú</h1><br>
+				<a href="#intro" style="color:white;font-family:geomanist_regularregular;">Home</a><br>
+				<p>–</p>
+				<a href="#p1" onClick="functionOne();" style="color:white;font-family:geomanist_regularregular;">1 - Planificar el huerto</a><br>
+				<a href="#p2" onClick="functionOne();" style="color:white;font-family:geomanist_regularregular;">2 - Los materiales</a><br>
+				<a href="#p3" onClick="functionOne();" style="color:white;font-family:geomanist_regularregular;">3 - Preparar la maceta</a><br>
+				<a href="#p4" onClick="functionOne();" style="color:white;font-family:geomanist_regularregular;">4 - La siembra</a><br>
+				<a href="#p5" onClick="functionOne();"style="color:white;font-family:geomanist_regularregular;">5 - El transplante</a><br>
+				<a href="#p6" onClick="functionOne();" style="color:white;font-family:geomanist_regularregular;">6 - Cuidar el huerto</a><br>
+				<p>–</p>
+				<a href="#about" onClick="functionOne();" style="color:white;font-family:geomanist_regularregular;">Sobre Püramün</a>
 			</div>
 		</div>
 		<div id="intro">
-			<div class="text">
-				<h1>¿Por qué un huerto en familia?</h1>
-				<p>Cuidar de un huerto en familia es una actividad que refuerza vínculos emocionales, favorece la concentración y la paciencia de los más pequeños y además inculca respeto hacia el medio ambiente.</p>
-			</div>
-			<div id="flecha">
-				<p>Pasos</p>
-				<a href="#paso1"><img src="img/flecha.png" style="width:30px;"></img></a>
-			</div>
-		</div>
-		<div id="paso1">
-			<div id="paso1-image1">
-				<div id="paso1-image2">
-					<div id="paso1-cabecera">
-						<div class="text">
-							<h1><a name="paso1">1 – Planificar el huerto</a></h1>
-							<p>El primer paso es decidir qué plantas vamos a cosechar en función del clima de nuestra zona y de las características de nuestro balcón o jardín. Tenemos que tener en cuenta, por un lado, cuánto espacio tenemos para cultivar y por otro, las condiciones de temperatura y luz de este espacio (lo cuál va a depender en gran medida de si se trata de un espacio abierto o cerrado).</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="paso1-contenido">
-				<div class="text">
-					<p>Debemos consultar los <a href="#" class="link">cuidados necesarios de cada planta</a> para saber si nuestro espacio es el adecuado para ellas.</p>
-				</div>
-				<div class="text">
-					<p>También debemos consultar cuáles son las combinaciones y rotaciones entre cultivos que se emplean en agricultura ecológica para que las plantas crezcan sanas y fuertes de forma natural.</p>
-					<a href="#"><img src="img/plus.png" style="width:30px;"></img></a>
-				</div>
-				<div id="combinaciones">
-					<div class="text">
-						<h2>COMBINACIONES Y ROTACIONES BENEFICIOSAS</h2>
-						<p>Esto es una descripción de rotaciones y combinaciones, para entender mejor el gráfico...</p>
-					</div>
-					<div>
-						<img src="img/grafico.png" style="max-width:320px;"></img>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- <div id="paso2">
-			<div id="paso2-image1">
-				<div id="paso2-image2">
-					<div id="paso2-cabecera">
-						<div class="text">
-							<p>Por último, debemos tener en cuenta son los marcos de cultivo, es decir, el espacio que necesia cada planta dentro de la maceta para desarrollarse correctamente.</p>
-							<a href="#"><img src="img/plus.png" style="width:30px; padding:0px0px30px0px;"></img></a>
-						</div>
-						<div id="marcos">
-							<div class="content">
-							    <div class="row">
-							        <div class="col-md-3"></div>
-							        <div class="col-md-3"></div>
-							       	<div class="col-md-3"></div>
-							       	<div class="col-md-3"></div>
-							    </div>
+			<div id="intro-img1" class="bg-img">
+				<div>
+					<div class="content">
+					    <div class="row">
+					        <div id="intro-content-img" class="col-md-3 title">
+					        	<img src="img/avispa.png" style="width:80px;">
+							</div>
+							<div id="intro-content-text" class="col-md-6 text title">
+								<h1 style="font-size: 4em;">Püramün</h1>
+								<p style="font-size: 2em;">Un huerto en familia</p>
+							</div>
+							<div id="intro-content-img-2" class="col-md-3 title">
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div> -->
-
-
-
-		<!-- <div class="cabecera">
-			<div class="content" id="image">
-				<div id="home">
-					<div>
-						<p>Chanante ipsum dolor sit amet, magna pero qué pelazo eiusmod sed chachachá agazapao. Ad veniam con las rodillas in the guanter melifluo elit. Consectetur adipisicing magna chavalada bizcoché ea tempor nisi ullamco eveniet super ñoño. Tempor quis labore aliqua saepe exercitation ayy qué gustico quis chiquititantantan labore adipisicing dolore ut.
-						Tunante ju-já tontiploster magna nuiiiii magna tempor. Fresquete ad to sueltecico labore. Regomello veniam freshquisimo churretoso ojete moreno chachachá et bizcoché. Minim nostrud bocachoti elit ad nostrud ex vivo con tu madre en un castillo veniam bufonesco super ñoño atiendee consectetur. Forrondosco con las rodillas in the guanter agazapao cobete ad dolore.
-						Asobinao nostrud eiusmod eveniet dolore ad melifluo nuiiiii ut ayy qué gustico veniam ut minim, mamellas. Ut labore to sueltecico, ut zanguango cartoniano cobete eiusmod vivo con tu madre en un castillo ut eiusmod eiusmod, elit soooy crossoverr. Elit pero qué pelazo traeros tol jamón saepe tempor aliqua dolore ex. Ut et, labore quis minim nisi muchachada pepino en la mano. Elit síberet bufonesco es de traca hueles avinagrado viejuno elit labore labore.</p>
+		</div>
+		<div id="intro-2">
+			<div class="cabecera">
+				<div class="content">
+				    <div class="row">
+				        <div class="col-md-3 title">
+							<h1>¿Por qué un hueto en familia?</h1>
+						</div>
+						<div class="col-md-9 text">
+							<p>Cuidar de un huerto con los peques de la casa es una actividad que permite el desarrollo de habilidades como la concentración, la paciencia y la cooperación. Por otro lado, al tratarse de una actividad de ocio en familia, refuerza los vículos familiares y emocionales. Y además, despierta el interés y el respeto por la naturaleza desde edades tempranas.</p>
+						</div>
 					</div>
 				</div>
-				<div id="verde" class="overlay">
-					<p>
-						<a href="#" onClick="functionOne();">cerrar</a>
-					</p>
+				<div class="button">
+					<a id="flecha" href="#p1"><img src="img/flecha.png" style="width=48px; height:48px;"></img></a>
 				</div>
 			</div>
-		</div> -->
-		<!-- Grid de Bootstrap -->
-		<!-- <div class="content">
-		    <div class="row">
-		        <div class="col-md-4"></div>
-		        <div class="col-md-4"></div>
-		       	<div class="col-md-4"></div>
-		    </div>
-		</div> -->
+		</div>
+		<div id="p1">
+			<div id="p1-img1" class="bg-img">
+				<div id="p1-img2" class="bg-img">
+					<div class="cabecera">
+						<div class="content">
+						    <div class="row">
+						        <div class="col-md-3 title">
+									<h1>1 – Planificar el huerto</h1>
+								</div>
+								<div class="col-md-9 text">
+									<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.</p>
+								</div>
+							</div>
+						</div>
+						<div id="button-p1" class="button-mas">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="p1-contenido" class="contenido">
+			<div class="contenido-text">
+				<p>Debemos consultar los <a href="#" class="link">cuidados necesarios de cada planta</a> para saber si nuestro espacio es el adecuado para cada una de ellas.</p><br>
+				<p>También debemos consultar cuáles son las combinaciones y rotaciones entre cultivos que se emplean en agricultura ecológica para que las plantas crezcan sanas y fuertes de forma natural. De este modo, podremos planificar las combinaciones y rotaciones que son más adecuadas para nuestras necesidades antes de hacernos con las semillas.</p>
+				<p>–</p>
+			</div>
+			<div class="contenido-text">
+				<h2>COMBINACIONES Y ROTACIONES BENEFICIOSAS</h2>
+			</div>
+			<div class="contenido-text">
+				<p>Esto es una descripción de rotaciones y combinaciones, para entender mejor el gráfico...</p>
+			</div>
+			<div id="g-circulo">
+				<img src="img/grafico.png" style="max-width: 100%;"></img>
+			</div>
+			<div class="contenido-text">
+				<p>Si quieres saber más sobre estas prácticas, puedes consultar la sección <a href="#" class="link">Agricultura Ecológica</a>.</p><br>
+				<p>Por último, debemos tener en cuenta son los marcos de cultivo, es decir, el espacio que necesia cada planta dentro de la maceta para desarrollarse correctamente.</p>
+				<p>–</p>
+			</div>
+			<div class="contenido-text">
+				<h2>MARCOS DE CULTIVO</h2>
+			</div>
+			<div class="contenido-text">
+				<p>Esto es una descripción de los marcos de cultivo.</p>
+			</div>
+			<div id="g-marcos">
+				<div class="row">
+			        <div class="col-md-6"><img src="img/marco1.png" style="width:100%;" class="marco-left"></div>
+			        <div class="col-md-6"><img src="img/marco2.png" style="width:100%;" class="marco-right"></div>
+			       	<div class="col-md-6"><img src="img/marco3.png" style="width:100%;" class="marco-left"></div>
+			       	<div class="col-md-6"><img src="img/marco4.png" style="width:100%;" class="marco-right"></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$( "#button-p1" ).click(function() {
+			  $( "#p1-contenido" ).slideToggle( "slow" );
+			  $ ( this ).toggleClass( "button-menos" );
+			});
+		</script>
+		<div id="p2">
+			<div id="p2-img1" class="bg-img">
+				<div id="p2-img2" class="bg-img">
+					<div class="cabecera">
+						<div class="content">
+						    <div class="row">
+						        <div class="col-md-3 title">
+									<h1>2 – Los materiales</h1>
+								</div>
+								<div class="col-md-9 text">
+									<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.</p>
+								</div>
+							</div>
+						</div>
+						<div id="button-p2" class="button-mas">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="p2-contenido" class="contenido">
+			<div id="g-marcos">
+			    <div class="row">
+			        <div class="col-md-6">
+			        	<div id="g-material">
+			        		<img src="img/material-maceta.png" style="width:90%;">
+			        	</div>
+			        	<div id="g-material">
+			        		<h2>maceta</h2><p>La maceta tiene que ser de cerámica, madera o textil. Bla bla, lomen ipsum.</p>
+			        	</div>
+			        </div>
+					<div class="col-md-6">
+			        	<div id="g-material">
+			        		<img src="img/semillero.png" style="width:90%;">
+			        	</div>
+			        	<div id="g-material">
+			        		<h2>semilleros</h2><p>La maceta tiene que ser de cerámica, madera o textil. Bla bla, lomen ipsum.</p>
+			        	</div>
+			        </div>
+					<div class="col-md-6">
+			        	<div id="g-material">
+			        		<img src="img/spray.png" style="width:90%;">
+			        	</div>
+			        	<div id="g-material">
+			        		<h2>pulverizador</h2><p>La maceta tiene que ser de cerámica, madera o textil. Bla bla, lomen ipsum.</p>
+			        	</div>
+			        </div>
+			        <div class="col-md-6">
+			        	<div id="g-material">
+			        		<img src="img/regadera.png" style="width:90%;">
+			        	</div>
+			        	<div id="g-material">
+			        		<h2>regadera</h2><p>La maceta tiene que ser de cerámica, madera o textil. Bla bla, lomen ipsum.</p>
+			        	</div>
+			        </div>
+			        <div class="col-md-6">
+			        	<div id="g-material">
+			        		<img src="img/coco.png" style="width:90%;">
+			        	</div>
+			        	<div id="g-material">
+			        		<h2>fibra de coco</h2><p>La maceta tiene que ser de cerámica, madera o textil. Bla bla, lomen ipsum.</p>
+			        	</div>
+			        </div>
+					<div class="col-md-6">
+			        	<div id="g-material">
+			        		<img src="img/lombriz.png" style="width:90%;">
+			        	</div>
+			        	<div id="g-material">
+			        		<h2>humus de lombriz</h2><p>La maceta tiene que ser de cerámica, madera o textil. Bla bla, lomen ipsum.</p>
+			        	</div>
+			        </div>
+					<div class="col-md-6">
+			        	<div id="g-material">
+			        		<img src="img/semillas.png" style="width:90%;">
+			        	</div>
+			        	<div id="g-material">
+			        		<h2>semillas</h2><p>La maceta tiene que ser de cerámica, madera o textil. Bla bla, lomen ipsum.</p>
+			        	</div>
+			        </div>
+					<div class="col-md-6">
+			        	<div id="g-material">
+			        		<img src="img/tijeras.png" style="width:90%;">
+			        	</div>
+			        	<div id="g-material">
+			        		<h2>tijeras</h2><p>La maceta tiene que ser de cerámica, madera o textil. Bla bla, lomen ipsum.</p>
+			        	</div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		<script>
+			$( "#button-p2" ).click(function() {
+			  $( "#p2-contenido" ).slideToggle( "slow" );
+			  $ ( this ).toggleClass( "button-menos" );
+			});
+		</script>
+		<div id="p3">
+			<div class="cabecera">
+				<div class="content">
+					<div class="row">
+						<div class="col-md-3 title">
+							<h1>3 – Preparar la maceta</h1>
+						</div>
+						<div class="col-md-9 text">
+							<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.</p>
+						</div>
+					</div>
+				</div>
+				<div id="button-p3" class="button-mas">
+				</div>
+			</div>
+		</div>
+		<div id="p3-contenido" class="contenido">
+			<div id="g-maceta"><img src="img/paso3-maceta.png" style="width:300px;"></div>
+		</div>
+		<script>
+			$( "#button-p3" ).click(function() {
+			  $( "#p3-contenido" ).slideToggle( "slow" );
+			  $ ( this ).toggleClass( "button-menos" );
+			});
+		</script>
+		<div id="p4">
+			<div id="p4-img1" class="bg-img">
+				<div id="p4-img2" class="bg-img">
+					<div class="cabecera">
+						<div class="content">
+						    <div class="row">
+						        <div class="col-md-3 title">
+									<h1>4 – La siembra</h1>
+								</div>
+								<div class="col-md-9 text">
+									<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.</p>
+								</div>
+							</div>
+						</div>
+						<div id="button-p4" class="button-mas">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="p4-contenido" class="contenido">
+			<div id="g-siembra">
+				<div class="info-numero"><img src="img/n1.png" style="width:45px;"></div>
+				<div class="info-text"><h2>Enterrar las semillas</h2></div>
+				<div class="info-img"><img src="img/paso4-01.png" style="width:70%;"></div>
+				<div class="info-numero"><img src="img/n2.png" style="width:45px;"></div>
+				<div class="info-text"><h2>Enterrar las semillas</h2></div>
+				<div class="info-img"><img src="img/paso4-02.png" style="width:70%;"></div>
+				<div class="info-numero"><img src="img/n3.png" style="width:45px;"></div>
+				<div class="info-text"><h2>Enterrar las semillas</h2></div>
+				<div class="info-img"><img src="img/paso4-03.png" style="width:70%;"></div>
+			</div>
+		</div>
+		<script>
+			$( "#button-p4" ).click(function() {
+			  $( "#p4-contenido" ).slideToggle( "slow" );
+			  $ ( this ).toggleClass( "button-menos" );
+			});
+		</script>
+		<div id="p5">
+			<div id="p5-img1" class="bg-img">
+				<div class="cabecera">
+					<div class="content">
+					    <div class="row">
+					        <div class="col-md-3 title">
+								<h1>5 – El transplante</h1>
+							</div>
+							<div class="col-md-9 text">
+								<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.</p>
+							</div>
+						</div>
+					</div>
+					<div id="button-p5" class="button-mas"></div>
+				</div>
+			</div>
+		</div>
+		<div id="p5-contenido" class="contenido">
+			<div id="g-siembra">
+				<div class="info-numero"><img src="img/n1.png" style="width:45px;"></div>
+				<div class="info-text"><h2>Enterrar las semillas</h2></div>
+				<div class="info-img"><img src="img/paso5-01.png" style="width:70%;"></div>
+				<div class="info-numero"><img src="img/n2.png" style="width:45px;"></div>
+				<div class="info-text"><h2>Enterrar las semillas</h2></div>
+				<div class="info-img"><img src="img/paso5-02.png" style="width:70%;"></div>
+				<div class="info-numero"><img src="img/n3.png" style="width:45px;"></div>
+				<div class="info-text"><h2>Enterrar las semillas</h2></div>
+				<div class="info-img"><img src="img/paso5-03.png" style="width:70%;"></div>
+				<div class="info-numero"><img src="img/n4.png" style="width:45px;"></div>
+				<div class="info-text"><h2>Enterrar las semillas</h2></div>
+				<div class="info-img"><img src="img/paso5-04.png" style="width:70%;"></div>
+				<div class="info-numero"><img src="img/n5.png" style="width:45px;"></div>
+				<div class="info-text"><h2>Enterrar las semillas</h2></div>
+				<div class="info-img"><img src="img/paso5-05.png" style="width:70%;"></div>
+				<div class="info-numero"><img src="img/n6.png" style="width:45px;"></div>
+				<div class="info-text"><h2>Enterrar las semillas</h2></div>
+				<div class="info-img"><img src="img/paso5-06.png" style="width:70%;"></div>
+			</div>
+		</div>
+		<script>
+			$( "#button-p5" ).click(function() {
+			  $( "#p5-contenido" ).slideToggle( "slow" );
+			  $ ( this ).toggleClass( "button-menos" );
+			});
+		</script>
+		</div>
+		<div id="p6">
+			<div id="p6-img1" class="bg-img">
+				<div id="p6-cabecera">
+					<div class="content">
+					    <div class="row">
+					        <div class="col-md-3 title">
+								<h1>6 – Cuidar el huerto</h1>
+							</div>
+							<div class="col-md-9 text">
+								<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.</p>
+							</div>
+						</div>
+					</div>
+					<div id="button-p6" class="button-mas">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="p6-contenido" class="contenido">
+			<div class="contenido-text">
+				<h2>LOS CUIDADOS DE CADA PLANTA</h2>
+			</div>
+			<div>
+			    <div id="g-marcos" class="row">
+			    	<div id="g-material" class="col-md-2"><a onClick="functionAjo2();"><img src="img/h01.png" style="width:100px;"></a><p>Ajo</p></div>
+			    	<div id="g-material" class="col-md-2"><a onClick="functionAlbahaca2();"><img src="img/h02.png" style="width:100px;"></a><p>Albahaca</p></div>
+			    	<div id="g-material" class="col-md-2"><a onClick="functionCebolla2();"><img src="img/h03.png" style="width:100px;"></a><p>Cebolla</p></div>
+			    	<div id="g-material" class="col-md-2"><a onClick="functionEspinaca2();"><img src="img/h04.png" style="width:100px;"></a><p>Espinaca</p></div>
+			    	<div id="g-material" class="col-md-2"><a onClick="functionGuisante2();"><img src="img/h05.png" style="width:100px;"></a><p>Guisante</p></div>
+			    	<div id="g-material" class="col-md-2"><a onClick="functionHaba2();"><img src="img/h06.png" style="width:100px;"></a><p>Haba</p></div>
+			    	<div id="g-material" class="col-md-2"><a onClick="functionLechuga2();"><img src="img/h07.png" style="width:100px;"></a><p>Lechuga</p></div>
+			    	<div id="g-material" class="col-md-2"><a onClick="functionPepino2();"><img src="img/h08.png" style="width:100px;"></a><p>Pepino</p></div>
+			    	<div id="g-material" class="col-md-2"><a onClick="functionPimiento2();"><img src="img/h09.png" style="width:100px;"></a><p>Pimiento</p></div>
+			    	<div id="g-material" class="col-md-2"><a onClick="functionRabanito2();"><img src="img/h10.png" style="width:100px;"></a><p>Rabanito</p></div>
+			    	<div id="g-material" class="col-md-2"><a onClick="functionTomate2();"><img src="img/h11.png" style="width:100px;"></a><p>Tomate</p></div>
+			    	<div id="g-material" class="col-md-2"><a onClick="functionZanahoria2();"><img src="img/h12.png" style="width:100px;"></a><p>Zanahoria</p></div>
+				</div>
+			</div>
+			<div id="ajo" class="overlay bg-ficha">
+				<div id="boton-cerrar">
+					<a href="#ajo" onClick="functionAjo();"><img src="img/cerrar_negro.png" style="width:48px;"></a>
+				</div>
+				<div class="ficha-text" style="color:black">
+					<div>
+					<h2>Ajo</h2>
+					</div>
+				    <div id="ficha" class="row">
+				        <div id="vegetal" class="col-md-6">
+							<img src="img/f-ajo-i.png" style="width:90%;">
+						</div>
+						<div id="vegetal" class="col-md-6">
+							<img src="img/f-ajo-d.png" style="width:100%" class="vegetal-d">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="albahaca" class="overlay bg-ficha">
+				<div id="boton-cerrar">
+					<a href="#ajo" onClick="functionAlbahaca();"><img src="img/cerrar_negro.png" style="width:48px;"></a>
+				</div>
+				<div class="ficha-text" style="color:black">
+					<div>
+					<h2>Albahaca</h2>
+					</div>
+				    <div id="ficha" class="row">
+				        <div id="vegetal" class="col-md-6">
+							<img src="img/f-albahaca-i.png" style="width:90%;">
+						</div>
+						<div id="vegetal" class="col-md-6">
+							<img src="img/f-albahaca-d.png" style="width:100%" class="vegetal-d">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="cebolla" class="overlay bg-ficha">
+				<div id="boton-cerrar">
+					<a href="#ajo" onClick="functionCebolla();"><img src="img/cerrar_negro.png" style="width:48px;"></a>
+				</div>
+				<div class="ficha-text" style="color:black">
+					<div>
+					<h2>Cebolla</h2>
+					</div>
+				    <div id="ficha" class="row">
+				        <div id="vegetal" class="col-md-6">
+							<img src="img/f-cebolla-i.png" style="width:90%;">
+						</div>
+						<div id="vegetal" class="col-md-6">
+							<img src="img/f-cebolla-d.png" style="width:100%" class="vegetal-d">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="espinaca" class="overlay bg-ficha">
+				<div id="boton-cerrar">
+					<a href="#ajo" onClick="functionEspinaca();"><img src="img/cerrar_negro.png" style="width:48px;"></a>
+				</div>
+				<div class="ficha-text" style="color:black">
+					<div>
+					<h2>Espinaca</h2>
+					</div>
+				    <div id="ficha" class="row">
+				        <div id="vegetal" class="col-md-6">
+							<img src="img/f-espinaca-i.png" style="width:90%;">
+						</div>
+						<div id="vegetal" class="col-md-6">
+							<img src="img/f-espinaca-d.png" style="width:100%" class="vegetal-d">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="guisante" class="overlay bg-ficha">
+				<div id="boton-cerrar">
+					<a href="#ajo" onClick="functionGuisante();"><img src="img/cerrar_negro.png" style="width:48px;"></a>
+				</div>
+				<div class="ficha-text" style="color:black">
+					<div>
+					<h2>Guisante</h2>
+					</div>
+				    <div id="ficha" class="row">
+				        <div id="vegetal" class="col-md-6">
+							<img src="img/f-guisante-i.png" style="width:90%;">
+						</div>
+						<div id="vegetal" class="col-md-6">
+							<img src="img/f-guisante-d.png" style="width:100%" class="vegetal-d">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="haba" class="overlay bg-ficha">
+				<div id="boton-cerrar">
+					<a href="#ajo" onClick="functionHaba();"><img src="img/cerrar_negro.png" style="width:48px;"></a>
+				</div>
+				<div class="ficha-text" style="color:black">
+					<div>
+					<h2>Haba</h2>
+					</div>
+				    <div id="ficha" class="row">
+				        <div id="vegetal" class="col-md-6">
+							<img src="img/f-haba-i.png" style="width:90%;">
+						</div>
+						<div id="vegetal" class="col-md-6">
+							<img src="img/f-haba-d.png" style="width:100%" class="vegetal-d">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="lechuga" class="overlay bg-ficha">
+				<div id="boton-cerrar">
+					<a href="#ajo" onClick="functionLechuga();"><img src="img/cerrar_negro.png" style="width:48px;"></a>
+				</div>
+				<div class="ficha-text" style="color:black">
+					<div>
+					<h2>Lechuga</h2>
+					</div>
+				    <div id="ficha" class="row">
+				        <div id="vegetal" class="col-md-6">
+							<img src="img/f-lechuga-i.png" style="width:90%;">
+						</div>
+						<div id="vegetal" class="col-md-6">
+							<img src="img/f-lechuga-d.png" style="width:100%" class="vegetal-d">
+						</div>
+					</div>
+			</div>
+			</div>
+			<div id="pepino" class="overlay bg-ficha">
+				<div id="boton-cerrar">
+					<a href="#ajo" onClick="functionPepino();"><img src="img/cerrar_negro.png" style="width:48px;"></a>
+				</div>
+				<div class="ficha-text" style="color:black">
+					<div>
+					<h2>Pepino</h2>
+					</div>
+				    <div id="ficha" class="row">
+				        <div id="vegetal" class="col-md-6">
+							<img src="img/f-pepino-i.png" style="width:90%;">
+						</div>
+						<div id="vegetal" class="col-md-6">
+							<img src="img/f-pepino-d.png" style="width:100%" class="vegetal-d">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="pimiento" class="overlay bg-ficha">
+				<div id="boton-cerrar">
+					<a href="#ajo" onClick="functionPimiento();"><img src="img/cerrar_negro.png" style="width:48px;"></a>
+				</div>
+				<div class="ficha-text" style="color:black">
+					<div>
+					<h2>Pimiento</h2>
+					</div>
+				    <div id="ficha" class="row">
+				        <div id="vegetal" class="col-md-6">
+							<img src="img/f-pimiento-i.png" style="width:90%;">
+						</div>
+						<div id="vegetal" class="col-md-6">
+							<img src="img/f-pimiento-d.png" style="width:100%" class="vegetal-d">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="rabanito" class="overlay bg-ficha">
+				<div id="boton-cerrar">
+					<a href="#ajo" onClick="functionRabanito();"><img src="img/cerrar_negro.png" style="width:48px;"></a>
+				</div>
+				<div class="ficha-text" style="color:black">
+					<div>
+					<h2>Rabanito</h2>
+					</div>
+				    <div id="ficha" class="row">
+				        <div id="vegetal" class="col-md-6">
+							<img src="img/f-rabanito-i.png" style="width:90%;">
+						</div>
+						<div id="vegetal" class="col-md-6">
+							<img src="img/f-rabanito-d.png" style="width:100%" class="vegetal-d">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tomate" class="overlay bg-ficha">
+				<div id="boton-cerrar">
+					<a href="#ajo" onClick="functionTomate();"><img src="img/cerrar_negro.png" style="width:48px;"></a>
+				</div>
+				<div class="ficha-text" style="color:black">
+					<div>
+					<h2>Tomate</h2>
+					</div>
+				    <div id="ficha" class="row">
+				        <div id="vegetal" class="col-md-6">
+							<img src="img/f-tomate-i.png" style="width:90%;">
+						</div>
+						<div id="vegetal" class="col-md-6">
+							<img src="img/f-tomate-d.png" style="width:100%" class="vegetal-d">
+						</div>
+						</div>
+				</div>
+			</div>
+			<div id="zanahoria" class="overlay bg-ficha">
+				<div id="boton-cerrar">
+					<a href="#ajo" onClick="functionZanahoria();"><img src="img/cerrar_negro.png" style="width:48px;"></a>
+				</div>
+				<div class="ficha-text" style="color:black">
+					<div>
+					<h2>Zanahoria</h2>
+					</div>
+				    <div id="ficha" class="row">
+				        <div id="vegetal" class="col-md-6">
+							<img src="img/f-zanahoria-i.png" style="width:90%;">
+						</div>
+						<div id="vegetal" class="col-md-6">
+							<img src="img/f-zanahoria-d.png" style="width:100%" class="vegetal-d">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="riego">
+				<div class="contenido-title">
+					<h2>EL RIEGO</h2>
+				</div>
+				<div class="contenido-text">
+					<p>Esto es una descripción de el riego.</p>
+				</div>
+				<div id="g-marcos">
+					<div class="row">
+				    	<div class="col-md-6">
+				    		<div id="g-riego">
+					    		<h2>Exceso</h2>
+					    	</div>
+					    	<div id="g-riego">
+					    		<img src="img/exceso.png" style="width:300px;">
+					    	</div>
+				    	</div>
+						<div class="col-md-6">
+				    		<div id="g-riego">
+					    		<h2>Escased</h2>
+					    	</div>
+					    	<div id="g-riego">
+					    		<img src="img/escased.png" style="width:300px;">
+					    	</div>
+				    	</div>
+					</div>
+				</div>
+			</div>
+			<div class="contenido-title">
+				<h2>LA COSECHA</h2>
+			</div>
+			<div class="contenido-text">
+				<p>Esto es una descripción de la cosecha.</p>
+			</div>
+		</div>
+		<script>
+			$( "#button-p6" ).click(function() {
+			  $( "#p6-contenido" ).slideToggle( "slow" );
+			  $ ( this ).toggleClass( "button-menos" );
+			});
+		</script>
+		<div id="about">
+			<div class="cabecera">
+				<div class="content">
+				    <div class="row">
+				        <div class="col-md-3 title">
+							<h1>Sobre Püramün</h1>
+						</div>
+						<div class="col-md-9 text">
+							<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </body>
 </html>
